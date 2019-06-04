@@ -1,0 +1,6 @@
+framework module Matrix {
+  umbrella header "matrix-wechat-umbrella.h"
+
+  export *
+  module * { export * }
+}
