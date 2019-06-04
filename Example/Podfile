@@ -1,11 +1,14 @@
 use_frameworks!
+platform:ios, '10.0'
+inhibit_all_warnings!
 
 target 'Frameworks_Swift_Example' do
   pod 'Frameworks_Swift', :path => '../'
+  pod 'Texture'
+  pod 'SwiftyJSON'
+  
 
   target 'Frameworks_Swift_Tests' do
     inherit! :search_paths
-
-    
   end
 end
