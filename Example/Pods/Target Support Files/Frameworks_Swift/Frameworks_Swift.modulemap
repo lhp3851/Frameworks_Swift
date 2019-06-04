@@ -1,6 +1,0 @@
-framework module Frameworks_Swift {
-  umbrella header "Frameworks_Swift-umbrella.h"
-
-  export *
-  module * { export * }
-}
