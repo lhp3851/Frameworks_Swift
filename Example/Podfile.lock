@@ -90,7 +90,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  Frameworks_Swift: 4d1a534afeec0152b239aec76837b677f8efb2de
+  Frameworks_Swift: 037783e9680add5beeab2120dd3fefcb2c66c2d9
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   matrix-wechat: 87e227259bb07bd56b76c0f7f1081bf9593b1eec
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
