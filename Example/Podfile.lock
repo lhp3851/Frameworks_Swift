@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.8.2)
-  - Frameworks_Swift (0.1.0):
+  - Frameworks_Swift (0.0.1):
     - Alamofire
     - Kingfisher
     - matrix-wechat
@@ -90,7 +90,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  Frameworks_Swift: 037783e9680add5beeab2120dd3fefcb2c66c2d9
+  Frameworks_Swift: 7bdf02cb01ba866adec1c3b577bd6b406adb198e
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   matrix-wechat: 87e227259bb07bd56b76c0f7f1081bf9593b1eec
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
@@ -104,6 +104,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
 
-PODFILE CHECKSUM: 67d120694cfa9167f874c4ab87b540556fa7f5f8
+PODFILE CHECKSUM: d08caad6e208e8e9d9273761fc8e2cebe019ece0
 
-COCOAPODS: 1.6.2
+COCOAPODS: 1.7.1
