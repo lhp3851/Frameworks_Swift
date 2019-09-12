@@ -90,7 +90,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  Frameworks_Swift: 7bdf02cb01ba866adec1c3b577bd6b406adb198e
+  Frameworks_Swift: 05810e44682419c46765a664c287da10179a24bb
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   matrix-wechat: 87e227259bb07bd56b76c0f7f1081bf9593b1eec
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
@@ -106,4 +106,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: d08caad6e208e8e9d9273761fc8e2cebe019ece0
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.7.3
