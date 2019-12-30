@@ -14,8 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        registeServices()
         return true
     }
 
@@ -42,5 +42,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+
+extension AppDelegate {
+    
+    func getServices() -> [BaseService] {
+        var services = [BaseService]()
+        let doraemon = DoraemonService.share
+        services.append(doraemon)
+        return services
+    }
+    
+    func registeServices() {
+        
+        let services = getServices()
+        
+        ServicesManager.share.registe(services, completion: nil)
+                        
+    }
+    
 }
 

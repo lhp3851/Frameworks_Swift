@@ -1,22 +1,34 @@
 PODS:
-  - Alamofire (4.8.2)
+  - Alamofire (4.9.0)
+  - BSBacktraceLogger (0.0.1)
+  - DoraemonKit (2.0.0):
+    - BSBacktraceLogger
+    - DoraemonKit/Core (= 2.0.0)
+    - fishhook
+  - DoraemonKit/Core (2.0.0):
+    - BSBacktraceLogger
+    - fishhook
+  - fishhook (0.2)
   - Frameworks_Swift (0.0.1):
     - Alamofire
+    - DoraemonKit (~> 2.0.0)
     - Kingfisher
     - matrix-wechat
     - RxCocoa (~> 5)
     - RxSwift (~> 5)
     - SnapKit
     - SwiftLint
-  - Kingfisher (4.10.1)
-  - matrix-wechat (0.5.1):
-    - matrix-wechat/matrixARC (= 0.5.1)
-    - matrix-wechat/matrixNonARC1 (= 0.5.1)
-    - matrix-wechat/matrixNonARC2 (= 0.5.1)
-  - matrix-wechat/matrixARC (0.5.1):
+  - Kingfisher (5.8.3):
+    - Kingfisher/Core (= 5.8.3)
+  - Kingfisher/Core (5.8.3)
+  - matrix-wechat (0.6.0):
+    - matrix-wechat/matrixARC (= 0.6.0)
+    - matrix-wechat/matrixNonARC1 (= 0.6.0)
+    - matrix-wechat/matrixNonARC2 (= 0.6.0)
+  - matrix-wechat/matrixARC (0.6.0):
     - matrix-wechat/matrixNonARC1
-  - matrix-wechat/matrixNonARC1 (0.5.1)
-  - matrix-wechat/matrixNonARC2 (0.5.1):
+  - matrix-wechat/matrixNonARC1 (0.6.0)
+  - matrix-wechat/matrixNonARC2 (0.6.0):
     - matrix-wechat/matrixARC
   - PINCache (3.0.1-beta.6):
     - PINCache/Arc-exception-safe (= 3.0.1-beta.6)
@@ -25,7 +37,7 @@ PODS:
     - PINCache/Core
   - PINCache/Core (3.0.1-beta.6):
     - PINOperation (~> 1.1.0)
-  - PINOperation (1.1.1)
+  - PINOperation (1.1.2)
   - PINRemoteImage/Core (3.0.0-beta.13):
     - PINOperation
   - PINRemoteImage/iOS (3.0.0-beta.13):
@@ -39,8 +51,8 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
-  - SnapKit (4.2.0)
-  - SwiftLint (0.33.0)
+  - SnapKit (5.0.1)
+  - SwiftLint (0.35.0)
   - SwiftyJSON (5.0.0)
   - Texture (2.8.1):
     - Texture/AssetsLibrary (= 2.8.1)
@@ -69,8 +81,11 @@ DEPENDENCIES:
   - Texture
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
+    - BSBacktraceLogger
+    - DoraemonKit
+    - fishhook
     - Kingfisher
     - matrix-wechat
     - PINCache
@@ -89,21 +104,24 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  Frameworks_Swift: 7bdf02cb01ba866adec1c3b577bd6b406adb198e
-  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
-  matrix-wechat: 87e227259bb07bd56b76c0f7f1081bf9593b1eec
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  BSBacktraceLogger: 06b983ee93a9f87d957960e9c73d660d5966b447
+  DoraemonKit: 9e923599e28d0b61f1c6de4aef2c2d669b30abb7
+  fishhook: ea19933abfe8f2f52c55fd8b6e2718467d3ebc89
+  Frameworks_Swift: 21a7139d1932dbf67dd9668bfa9356e34c5486e8
+  Kingfisher: b7e4cb65ff24c264bd2a1284b75b974d907afd94
+  matrix-wechat: d8dcd9fc42649f20908e6fe4498f9bdb18e60d1c
   PINCache: d195fdba255283f7e9900a55e3cced377f431f9b
-  PINOperation: a6219e6fc9db9c269eb7a7b871ac193bcf400aac
+  PINOperation: 24b774353ca248fcf87d67b2d61eef42087c125a
   PINRemoteImage: d6d51c5d2adda55f1ce30c96e850b6c4ebd2856a
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
-  SwiftLint: fed9c66336e41fc74dc48a73678380718f0c8b0e
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Texture: 8ecf6984065a1e54f06bf97b349ecca28582acd7
 
-PODFILE CHECKSUM: d08caad6e208e8e9d9273761fc8e2cebe019ece0
+PODFILE CHECKSUM: 068466456d2ca89682d2d2f9d5b507ddc8aa99ac
 
-COCOAPODS: 1.7.1
+COCOAPODS: 1.8.4
