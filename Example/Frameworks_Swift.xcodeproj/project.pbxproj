@@ -15,6 +15,10 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		BE4C0D0423B9A88700073100 /* ServicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0D0323B9A88700073100 /* ServicesManager.swift */; };
+		BE4C0D0623B9AC4F00073100 /* DoraemonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0D0523B9AC4F00073100 /* DoraemonService.swift */; };
+		BE4C0D0923B9C59100073100 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0D0823B9C59100073100 /* BaseService.swift */; };
+		BE4C0D0B23B9C62C00073100 /* BaseServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0D0A23B9C62C00073100 /* BaseServiceInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		B697FAF571E075CC15089415 /* Pods-Frameworks_Swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Frameworks_Swift_Tests.release.xcconfig"; path = "Target Support Files/Pods-Frameworks_Swift_Tests/Pods-Frameworks_Swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BA3DD968B9A460D9A85B38C1 /* Pods_Frameworks_Swift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Frameworks_Swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC394A97B8655667E5A8F4F3 /* Frameworks_Swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Frameworks_Swift.podspec; path = ../Frameworks_Swift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE4C0D0323B9A88700073100 /* ServicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesManager.swift; sourceTree = "<group>"; };
+		BE4C0D0523B9AC4F00073100 /* DoraemonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoraemonService.swift; sourceTree = "<group>"; };
+		BE4C0D0823B9C59100073100 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		BE4C0D0A23B9C62C00073100 /* BaseServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceInterface.swift; sourceTree = "<group>"; };
 		FAF825511F72FA04B7549F42 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +101,7 @@
 		607FACD21AFB9204008FA782 /* Example for Frameworks_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				BE4C0D0C23B9C75400073100 /* Container */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -137,6 +146,33 @@
 				AB5596D88BE536D8DDA8EC1F /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		BE4C0D0C23B9C75400073100 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				BE4C0D1123B9C7E700073100 /* Services */,
+				BE4C0D0F23B9C78E00073100 /* Bases */,
+				BE4C0D0323B9A88700073100 /* ServicesManager.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		BE4C0D0F23B9C78E00073100 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+				BE4C0D0823B9C59100073100 /* BaseService.swift */,
+				BE4C0D0A23B9C62C00073100 /* BaseServiceInterface.swift */,
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		BE4C0D1123B9C7E700073100 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BE4C0D0523B9AC4F00073100 /* DoraemonService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		E1B70E31CEE48530596397EA /* Pods */ = {
@@ -212,11 +248,13 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = ZJ33MZPCV8;
+						LastSwiftMigration = 1110;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = ZJ33MZPCV8;
+						LastSwiftMigration = 1110;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -313,6 +351,8 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Frameworks_Swift_Example/Pods-Frameworks_Swift_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/BSBacktraceLogger/BSBacktraceLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/DoraemonKit/DoraemonKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Frameworks_Swift/Frameworks_Swift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
@@ -324,11 +364,14 @@
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+				"${BUILT_PRODUCTS_DIR}/fishhook/fishhook.framework",
 				"${BUILT_PRODUCTS_DIR}/matrix-wechat/Matrix.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BSBacktraceLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoraemonKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Frameworks_Swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
@@ -340,6 +383,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/fishhook.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Matrix.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,8 +398,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE4C0D0423B9A88700073100 /* ServicesManager.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				BE4C0D0623B9AC4F00073100 /* DoraemonService.swift in Sources */,
+				BE4C0D0923B9C59100073100 /* BaseService.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				BE4C0D0B23B9C62C00073100 /* BaseServiceInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +553,7 @@
 			baseConfigurationReference = 083351490B3985D5E378E4C5 /* Pods-Frameworks_Swift_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZJ33MZPCV8;
 				INFOPLIST_FILE = Frameworks_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -512,7 +561,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -521,6 +570,7 @@
 			baseConfigurationReference = 0C32DA7729C23652E218ED84 /* Pods-Frameworks_Swift_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZJ33MZPCV8;
 				INFOPLIST_FILE = Frameworks_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -528,7 +578,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -536,6 +586,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 49B5094953EDCC8877CB949E /* Pods-Frameworks_Swift_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ZJ33MZPCV8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -549,7 +600,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frameworks_Swift_Example.app/Frameworks_Swift_Example";
 			};
 			name = Debug;
@@ -558,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B697FAF571E075CC15089415 /* Pods-Frameworks_Swift_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ZJ33MZPCV8;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -567,7 +619,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Frameworks_Swift_Example.app/Frameworks_Swift_Example";
 			};
 			name = Release;
