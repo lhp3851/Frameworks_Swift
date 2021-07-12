@@ -47,5 +47,5 @@ TODO: Add long description of the pod here.
   s.dependency 'RxCocoa', '~> 5'
   s.dependency 'matrix-wechat'
   s.dependency 'SwiftLint'
-  s.dependency 'DoraemonKit','~> 2.0.0'
+  s.dependency 'DoraemonKit','~> 3.0.7'
 end
