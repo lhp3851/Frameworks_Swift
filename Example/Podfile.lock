@@ -18,7 +18,6 @@ PODS:
     - RxCocoa (~> 5)
     - RxSwift (~> 5)
     - SnapKit
-    - SwiftLint
   - GCDWebServer (3.5.4):
     - GCDWebServer/Core (= 3.5.4)
   - GCDWebServer/Core (3.5.4)
@@ -58,7 +57,6 @@ PODS:
     - RxSwift (~> 5)
   - RxSwift (5.1.2)
   - SnapKit (5.0.1)
-  - SwiftLint (0.43.1)
   - SwiftyJSON (5.0.1)
   - Texture (3.0.0):
     - Texture/AssetsLibrary (= 3.0.0)
@@ -101,7 +99,6 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SnapKit
-    - SwiftLint
     - SwiftyJSON
     - Texture
 
@@ -113,7 +110,7 @@ SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   DoraemonKit: 32fb97f3aa82efa133111d193080ca5462cef135
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  Frameworks_Swift: cc629be9548acd586b17d023a9fa8f4cb1e372db
+  Frameworks_Swift: 47a82830ddeb8b9bfb2e163a05a64fc965d70efb
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
   matrix-wechat: db0ef2c0bfe982aa9c2c42aa409c48724bedc507
@@ -124,7 +121,6 @@ SPEC CHECKSUMS:
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
 
