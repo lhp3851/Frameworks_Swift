@@ -35,4 +35,6 @@ Carthage/Build
 # `pod install` in .travis.yml
 #
 Example/Pods/
+!Example/Pods/Manifest.lock
+!Example/Pods/Pods.xcodeproj
 
