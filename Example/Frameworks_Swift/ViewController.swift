@@ -9,11 +9,10 @@
 import UIKit
 import Frameworks_Swift
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 
     override func didReceiveMemoryWarning() {

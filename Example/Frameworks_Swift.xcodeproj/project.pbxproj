@@ -19,6 +19,15 @@
 		BE4C0D0623B9AC4F00073100 /* DoraemonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0D0523B9AC4F00073100 /* DoraemonService.swift */; };
 		BE4C0D0923B9C59100073100 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0D0823B9C59100073100 /* BaseService.swift */; };
 		BE4C0D0B23B9C62C00073100 /* BaseServiceInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4C0D0A23B9C62C00073100 /* BaseServiceInterface.swift */; };
+		BE7B4AB726EF55370084C6AC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7B4AB226EF55360084C6AC /* BaseViewController.swift */; };
+		BE7B4AB826EF55370084C6AC /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7B4AB326EF55360084C6AC /* BaseTabBarViewController.swift */; };
+		BE7B4AB926EF55370084C6AC /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7B4AB526EF55370084C6AC /* BaseModel.swift */; };
+		BE7B4ABA26EF55370084C6AC /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7B4AB626EF55370084C6AC /* BaseNavigationViewController.swift */; };
+		BE7B4ABD26EF55C00084C6AC /* ViewControllerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7B4ABC26EF55BF0084C6AC /* ViewControllerProtocols.swift */; };
+		BE7B4AC426EF56DD0084C6AC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7B4AC326EF56DD0084C6AC /* HomeViewController.swift */; };
+		BE7B4AC626EF56EF0084C6AC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7B4AC526EF56EF0084C6AC /* SettingsViewController.swift */; };
+		BE7B4AC826EF56FF0084C6AC /* LibrariesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7B4AC726EF56FF0084C6AC /* LibrariesViewController.swift */; };
+		BE7B4ACB26EF574B0084C6AC /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7B4ACA26EF574B0084C6AC /* NetWorkTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +63,15 @@
 		BE4C0D0523B9AC4F00073100 /* DoraemonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoraemonService.swift; sourceTree = "<group>"; };
 		BE4C0D0823B9C59100073100 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		BE4C0D0A23B9C62C00073100 /* BaseServiceInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServiceInterface.swift; sourceTree = "<group>"; };
+		BE7B4AB226EF55360084C6AC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BE7B4AB326EF55360084C6AC /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		BE7B4AB526EF55370084C6AC /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		BE7B4AB626EF55370084C6AC /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		BE7B4ABC26EF55BF0084C6AC /* ViewControllerProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocols.swift; sourceTree = "<group>"; };
+		BE7B4AC326EF56DD0084C6AC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BE7B4AC526EF56EF0084C6AC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		BE7B4AC726EF56FF0084C6AC /* LibrariesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrariesViewController.swift; sourceTree = "<group>"; };
+		BE7B4ACA26EF574B0084C6AC /* NetWorkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
 		FAF825511F72FA04B7549F42 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +119,10 @@
 		607FACD21AFB9204008FA782 /* Example for Frameworks_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				BE7B4AC926EF57260084C6AC /* Tools */,
+				BE7B4ABE26EF56780084C6AC /* Modules */,
+				BE7B4ABB26EF55BF0084C6AC /* Protocols */,
+				BE7B4AB126EF54F10084C6AC /* Base */,
 				BE4C0D0C23B9C75400073100 /* Container */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -151,20 +173,12 @@
 		BE4C0D0C23B9C75400073100 /* Container */ = {
 			isa = PBXGroup;
 			children = (
+				BE4C0D0823B9C59100073100 /* BaseService.swift */,
+				BE4C0D0A23B9C62C00073100 /* BaseServiceInterface.swift */,
 				BE4C0D1123B9C7E700073100 /* Services */,
-				BE4C0D0F23B9C78E00073100 /* Bases */,
 				BE4C0D0323B9A88700073100 /* ServicesManager.swift */,
 			);
 			path = Container;
-			sourceTree = "<group>";
-		};
-		BE4C0D0F23B9C78E00073100 /* Bases */ = {
-			isa = PBXGroup;
-			children = (
-				BE4C0D0823B9C59100073100 /* BaseService.swift */,
-				BE4C0D0A23B9C62C00073100 /* BaseServiceInterface.swift */,
-			);
-			path = Bases;
 			sourceTree = "<group>";
 		};
 		BE4C0D1123B9C7E700073100 /* Services */ = {
@@ -173,6 +187,83 @@
 				BE4C0D0523B9AC4F00073100 /* DoraemonService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BE7B4AB126EF54F10084C6AC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B4AB626EF55370084C6AC /* BaseNavigationViewController.swift */,
+				BE7B4AB326EF55360084C6AC /* BaseTabBarViewController.swift */,
+				BE7B4AB226EF55360084C6AC /* BaseViewController.swift */,
+				BE7B4AB426EF55370084C6AC /* Models */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BE7B4AB426EF55370084C6AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B4AB526EF55370084C6AC /* BaseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BE7B4ABB26EF55BF0084C6AC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B4ABC26EF55BF0084C6AC /* ViewControllerProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		BE7B4ABE26EF56780084C6AC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B4AC026EF56930084C6AC /* Home */,
+				BE7B4AC226EF56AD0084C6AC /* Libraries */,
+				BE7B4AC126EF569F0084C6AC /* Settings */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BE7B4ABF26EF56820084C6AC /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B4ACA26EF574B0084C6AC /* NetWorkTools.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		BE7B4AC026EF56930084C6AC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B4AC326EF56DD0084C6AC /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BE7B4AC126EF569F0084C6AC /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B4AC526EF56EF0084C6AC /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		BE7B4AC226EF56AD0084C6AC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B4AC726EF56FF0084C6AC /* LibrariesViewController.swift */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		BE7B4AC926EF57260084C6AC /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				BE7B4ABF26EF56820084C6AC /* NetWork */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		E1B70E31CEE48530596397EA /* Pods */ = {
@@ -418,12 +509,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE7B4AB926EF55370084C6AC /* BaseModel.swift in Sources */,
 				BE4C0D0423B9A88700073100 /* ServicesManager.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				BE7B4ABA26EF55370084C6AC /* BaseNavigationViewController.swift in Sources */,
 				BE4C0D0623B9AC4F00073100 /* DoraemonService.swift in Sources */,
+				BE7B4ACB26EF574B0084C6AC /* NetWorkTools.swift in Sources */,
+				BE7B4ABD26EF55C00084C6AC /* ViewControllerProtocols.swift in Sources */,
 				BE4C0D0923B9C59100073100 /* BaseService.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				BE7B4AC826EF56FF0084C6AC /* LibrariesViewController.swift in Sources */,
+				BE7B4AB726EF55370084C6AC /* BaseViewController.swift in Sources */,
 				BE4C0D0B23B9C62C00073100 /* BaseServiceInterface.swift in Sources */,
+				BE7B4AC626EF56EF0084C6AC /* SettingsViewController.swift in Sources */,
+				BE7B4AB826EF55370084C6AC /* BaseTabBarViewController.swift in Sources */,
+				BE7B4AC426EF56DD0084C6AC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

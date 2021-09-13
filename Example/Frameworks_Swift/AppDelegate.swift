@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         registeServices()
+        setRootView()
         return true
     }
 
@@ -46,6 +47,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 extension AppDelegate {
+    
+    func setRootView() {
+        if let window = window {
+            window.rootViewController = BaseTabBarViewController()
+        } else {
+            window = UIWindow(frame: UIScreen.main.bounds);
+            window!.rootViewController = BaseTabBarViewController()
+        }
+    }
     
     func getServices() -> [BaseService] {
         var services = [BaseService]()
