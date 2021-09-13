@@ -1,8 +1,24 @@
 PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
   - Alamofire (5.4.3)
-  - DoraemonKit (3.0.7):
-    - DoraemonKit/Core (= 3.0.7)
-  - DoraemonKit/Core (3.0.7):
+  - DoraemonKit (3.1.0):
+    - DoraemonKit/Core (= 3.1.0)
+  - DoraemonKit/Core (3.1.0):
+    - AFNetworking
     - FMDB
     - GCDWebServer
     - GCDWebServer/WebDAV
@@ -10,14 +26,30 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - Frameworks_Swift (0.0.2):
-    - Alamofire
-    - DoraemonKit (~> 3.0.7)
-    - Kingfisher
-    - matrix-wechat
-    - RxCocoa (~> 5)
-    - RxSwift (~> 5)
-    - SnapKit
+  - Frameworks_Swift (0.1.0):
+    - Frameworks_Swift/Components (= 0.1.0)
+    - Frameworks_Swift/Core (= 0.1.0)
+    - Frameworks_Swift/Debug (= 0.1.0)
+    - Frameworks_Swift/Image (= 0.1.0)
+    - Frameworks_Swift/NetWork (= 0.1.0)
+    - Frameworks_Swift/Profile (= 0.1.0)
+  - Frameworks_Swift/Components (0.1.0):
+    - Frameworks_Swift/Core
+    - SnapKit (~> 5.0.1)
+  - Frameworks_Swift/Core (0.1.0):
+    - RxCocoa (~> 6.2.0)
+    - RxSwift (~> 6.2.0)
+  - Frameworks_Swift/Debug (0.1.0):
+    - DoraemonKit (~> 3.1.0)
+    - SwiftLint (~> 0.44.0)
+  - Frameworks_Swift/Image (0.1.0):
+    - Frameworks_Swift/Core
+    - Kingfisher (~> 6.3.1)
+  - Frameworks_Swift/NetWork (0.1.0):
+    - Alamofire (~> 5.4.3)
+    - Frameworks_Swift/Core
+  - Frameworks_Swift/Profile (0.1.0):
+    - matrix-wechat (~> 1.0.1)
   - GCDWebServer (3.5.4):
     - GCDWebServer/Core (= 3.5.4)
   - GCDWebServer/Core (3.5.4)
@@ -25,7 +57,7 @@ PODS:
     - GCDWebServer/Core
   - GCDWebServer/WebUploader (3.5.4):
     - GCDWebServer/Core
-  - Kingfisher (6.3.0)
+  - Kingfisher (6.3.1)
   - matrix-wechat (1.0.1):
     - matrix-wechat/matrixARC (= 1.0.1)
     - matrix-wechat/matrixNonARC1 (= 1.0.1)
@@ -50,13 +82,14 @@ PODS:
   - PINRemoteImage/PINCache (3.0.3):
     - PINCache (~> 3.0.3)
     - PINRemoteImage/Core
-  - RxCocoa (5.1.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.1.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.1.2)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
   - SnapKit (5.0.1)
+  - SwiftLint (0.44.0)
   - SwiftyJSON (5.0.1)
   - Texture (3.0.0):
     - Texture/AssetsLibrary (= 3.0.0)
@@ -86,6 +119,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AFNetworking
     - Alamofire
     - DoraemonKit
     - FMDB
@@ -99,6 +133,7 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
     - SnapKit
+    - SwiftLint
     - SwiftyJSON
     - Texture
 
@@ -107,20 +142,22 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
-  DoraemonKit: 32fb97f3aa82efa133111d193080ca5462cef135
+  DoraemonKit: 6db7868ed839ad6752c2e4ac074f958aab211af2
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  Frameworks_Swift: 47a82830ddeb8b9bfb2e163a05a64fc965d70efb
+  Frameworks_Swift: 7c1f1bb43b623cf0b668cec6742718dea048bb9d
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
-  Kingfisher: 6c3df386db71d82c0817a429d2c9421a77396529
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   matrix-wechat: db0ef2c0bfe982aa9c2c42aa409c48724bedc507
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
   PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
-  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
-  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftLint: e96c0a8c770c7ebbc4d36c55baf9096bb65c4584
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   Texture: 2f109e937850d94d1d07232041c9c7313ccddb81
 
