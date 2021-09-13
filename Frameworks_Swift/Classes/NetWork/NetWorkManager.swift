@@ -7,6 +7,6 @@
 
 import UIKit
 
-class KKNetWorkManager: NSObject {
+class NetWorkManager: NSObject {
 
 }

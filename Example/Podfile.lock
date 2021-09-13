@@ -15,6 +15,9 @@ PODS:
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
   - Alamofire (5.4.3)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - DoraemonKit (3.1.0):
     - DoraemonKit/Core (= 3.1.0)
   - DoraemonKit/Core (3.1.0):
@@ -34,6 +37,7 @@ PODS:
     - Frameworks_Swift/NetWork (= 0.1.0)
     - Frameworks_Swift/Profile (= 0.1.0)
   - Frameworks_Swift/Components (0.1.0):
+    - Charts (~> 3.6.0)
     - Frameworks_Swift/Core
     - SnapKit (~> 5.0.1)
   - Frameworks_Swift/Core (0.1.0):
@@ -48,6 +52,8 @@ PODS:
   - Frameworks_Swift/NetWork (0.1.0):
     - Alamofire (~> 5.4.3)
     - Frameworks_Swift/Core
+    - Moya (~> 15.0.0)
+    - SwiftyJSON (~> 5.0.1)
   - Frameworks_Swift/Profile (0.1.0):
     - matrix-wechat (~> 1.0.1)
   - GCDWebServer (3.5.4):
@@ -67,6 +73,10 @@ PODS:
   - matrix-wechat/matrixNonARC1 (1.0.1)
   - matrix-wechat/matrixNonARC2 (1.0.1):
     - matrix-wechat/matrixARC
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
   - PINCache (3.0.3):
     - PINCache/Arc-exception-safe (= 3.0.3)
     - PINCache/Core (= 3.0.3)
@@ -121,11 +131,13 @@ SPEC REPOS:
   trunk:
     - AFNetworking
     - Alamofire
+    - Charts
     - DoraemonKit
     - FMDB
     - GCDWebServer
     - Kingfisher
     - matrix-wechat
+    - Moya
     - PINCache
     - PINOperation
     - PINRemoteImage
@@ -144,12 +156,14 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   DoraemonKit: 6db7868ed839ad6752c2e4ac074f958aab211af2
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  Frameworks_Swift: 7c1f1bb43b623cf0b668cec6742718dea048bb9d
+  Frameworks_Swift: 9e3b350eb3d70ce0d5c1af6efe8943e3967193fa
   GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
   matrix-wechat: db0ef2c0bfe982aa9c2c42aa409c48724bedc507
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
   PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
   PINOperation: 00c935935f1e8cf0d1e2d6b542e75b88fc3e5e20
   PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
