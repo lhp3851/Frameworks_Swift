@@ -49,7 +49,7 @@ A frameworks for swift, which based on RxSwift.
 
   s.subspec 'Components' do |components|
     components.dependency 'Frameworks_Swift/Core'
-    components.dependency 'SnapKit', '~> 5.0.1'
+    components.dependency 'SnapKit', '~> 5.6.0'
     components.dependency 'Charts', '~> 3.6.0'
     components.source_files = 'Frameworks_Swift/Classes/Components/**/*'
     s.resource_bundles = {

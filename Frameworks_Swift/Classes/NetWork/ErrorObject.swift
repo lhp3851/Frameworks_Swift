@@ -137,11 +137,3 @@ class ErrorObject: NSObject, NSCoding {
     }
     
 }
-
-protocol Jsonable {
-        
-    init(fromJson: JSON)
-    
-//    func toJson() -> Model?
-    
-}

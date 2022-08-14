@@ -16,22 +16,22 @@ public class SessionManagers: NSObject {
         case background(identifier: String)
     }
     
-    static let backgroundIdentifier = "com.we.seen.session.identifier"
+    static let backgroundIdentifier = "com.we.seen.background.session.identifier"
     
-    private func sessionConfig() -> URLSessionConfiguration {
+    private lazy var sessionConfig : URLSessionConfiguration = {
         let temp = URLSessionConfiguration.default
         return temp
-    }
+    }()
     
     private func bacgroundSessionConfig(identifire: String) -> URLSessionConfiguration {
         let temp = URLSessionConfiguration.background(withIdentifier: identifire)
         return temp
     }
     
-    private func tempSessionConfig() -> URLSessionConfiguration {
+    private lazy var tempSessionConfig: URLSessionConfiguration = {
         let temp = URLSessionConfiguration.ephemeral
         return temp
-    }
+    }()
     
     var sessionManager: URLSession?
     
@@ -46,9 +46,9 @@ public class SessionManagers: NSObject {
         if case let .background(identifire) = sessionType {
             sessionManager = URLSession(configuration: bacgroundSessionConfig(identifire: identifire))
         } else if case let .temp = sessionType {
-            sessionManager = URLSession.init(configuration: tempSessionConfig())
+            sessionManager = URLSession.init(configuration: tempSessionConfig)
         } else {
-            sessionManager = URLSession(configuration: sessionConfig())
+            sessionManager = URLSession(configuration: sessionConfig)
         }
     }
 
